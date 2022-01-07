@@ -13,7 +13,7 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, '{"path":"/gmasc minutes/website files","re
 curl_setopt($ch, CURLOPT_POST, 1);
 
 $headers = array();
-$headers[] = "Authorization: Bearer ***REMOVED***";
+$headers[] = "Authorization: Bearer ";
 $headers[] = "Content-Type: application/json";
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 
@@ -49,7 +49,7 @@ foreach($folders as $folder){
 		curl_setopt($ch, CURLOPT_POST, 1);
 		
 		$headers = array();
-		$headers[] = "Authorization: Bearer ***REMOVED***";
+		$headers[] = "Authorization: Bearer ";
 		$headers[] = "Content-Type: application/json";
 		curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 		
