@@ -1,0 +1,17 @@
+.woocommerce form .form-row {
+	display: block;
+}
+
+.woocommerce .col-1, .woocommerce .col-2 {
+	flex: none;
+	max-width:100%;
+}
+
+.woocommerce .thwcfd-field-radio label.radio {
+	display: inline-block;
+}
+
+.wc-block-grid__product-image img {
+	width: 150px;
+	height: 150px;
+}

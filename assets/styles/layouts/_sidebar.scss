@@ -1,0 +1,24 @@
+aside.sidebar {
+	font-size: small;
+	
+	section {
+		margin-left: 10px;
+		margin-bottom: 20px;
+		h1,h2,h3,h4,h5,h6 {
+			margin-left: -10px;
+		}
+	}
+}
+
+.widget.widget_sendgrid_nlvx_widget {
+	.sendgrid_widget_text {
+		margin-bottom: 0;
+	}
+	form#sendgrid_mc_email_form.mc_email_form {
+		paddding-top: 0 !important;
+	}
+	#sendgrid_mc_email_submit {
+		@extend .btn;
+		@extend .btn-primary;
+	}
+}

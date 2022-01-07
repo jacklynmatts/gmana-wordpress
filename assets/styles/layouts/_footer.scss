@@ -1,0 +1,14 @@
+body {
+	margin-bottom: 40px;
+}
+
+#footer-phone a{
+	color: #f8f9fa;
+}
+
+@include media-breakpoint-down(sm) {
+	#footer-address {
+		display: none;
+		visibility: hidden;
+	}
+}

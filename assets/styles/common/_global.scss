@@ -1,0 +1,288 @@
+
+// Minty 4.0.0
+// Bootswatch
+
+// Variables ===================================================================
+
+$web-font-path: "https://fonts.googleapis.com/css?family=Montserrat" !default;
+@import url($web-font-path);
+
+// Navbar ======================================================================
+
+.navbar {
+  font-family: $headings-font-family;
+}
+
+.bg-dark {
+  background-color: map-get($theme-colors, "secondary") !important;
+}
+
+.border-dark {
+  border-color: map-get($theme-colors, "secondary") !important;
+}
+
+// Buttons =====================================================================
+
+.btn {
+  font-family: $headings-font-family;
+
+  &,
+  &:hover {
+    color: $white;
+  }
+
+  &-link,
+  &-link:hover {
+    color: map-get($theme-colors, "primary");
+  }
+
+  &-link.disabled:hover {
+    color: $gray-600;
+  }
+
+  &-outline-primary {
+    color: map-get($theme-colors, "primary");
+  }
+
+  &-outline-secondary {
+    color: map-get($theme-colors, "secondary");
+  }
+
+  &-outline-success {
+    color: map-get($theme-colors, "success");
+  }
+
+  &-outline-info {
+    color: map-get($theme-colors, "info");
+  }
+
+  &-outline-warning {
+    color: map-get($theme-colors, "warning");
+  }
+
+  &-outline-danger {
+    color: map-get($theme-colors, "danger");
+  }
+
+  &-outline-dark {
+    color: map-get($theme-colors, "dark");
+  }
+
+  &-outline-light {
+    color: map-get($theme-colors, "light");
+  }
+}
+
+// Typography ==================================================================
+
+// Tables ======================================================================
+
+.table {
+
+  &-success,
+  &-info,
+  &-warning,
+  &-danger {
+    color: #fff;
+  }
+
+  &-success {
+    &, > th, > td {
+      background-color: map-get($theme-colors, "success");
+    }
+  }
+
+  &-info {
+    &, > th, > td {
+      background-color: map-get($theme-colors, "info");
+    }
+  }
+
+  &-danger {
+    &, > th, > td {
+      background-color: map-get($theme-colors, "danger");
+    }
+  }
+
+  &-warning {
+    &, > th, > td {
+      background-color: map-get($theme-colors, "warning");
+    }
+  }
+
+  &-hover {
+
+    .table-success:hover {
+      &, > th, > td {
+        background-color: darken(map-get($theme-colors, "success"), 5%);
+      }
+    }
+
+    .table-info:hover {
+      &, > th, > td {
+        background-color: darken(map-get($theme-colors, "info"), 5%);
+      }
+    }
+
+    .table-danger:hover {
+      &, > th, > td {
+        background-color: darken(map-get($theme-colors, "danger"), 5%);
+      }
+    }
+
+    .table-warning:hover {
+      &, > th, > td {
+        background-color: darken(map-get($theme-colors, "warning"), 5%);
+      }
+    }
+  }
+
+  .thead-dark th {
+    background-color: map-get($theme-colors, "primary");
+    border-color: $table-border-color;
+    font-family: $headings-font-family;
+  }
+}
+
+// Forms =======================================================================
+
+legend {
+  font-family: $headings-font-family;
+}
+
+// Navs ========================================================================
+
+.dropdown-menu {
+  font-family: $font-family-sans-serif;
+}
+
+.breadcrumb {
+  a {
+    color: $navbar-dark-color;
+  }
+
+  a:hover {
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+.pagination {
+  .page-link:hover {
+    text-decoration: none;
+  }
+}
+
+// Indicators ==================================================================
+
+.alert {
+  color: $white;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: inherit;
+  }
+
+  a,
+  .alert-link {
+    color: $white;
+  }
+
+  &-success {
+    &, > th, > td {
+      background-color: map-get($theme-colors, "success");
+    }
+  }
+
+  &-info {
+    &, > th, > td {
+      background-color: map-get($theme-colors, "info");
+    }
+  }
+
+  &-danger {
+    &, > th, > td {
+      background-color: map-get($theme-colors, "danger");
+    }
+  }
+
+  &-warning {
+    &, > th, > td {
+      background-color: map-get($theme-colors, "warning");
+    }
+  }
+}
+
+.badge {
+  color: $white;
+
+  &-light {
+    color: $gray-700;
+  }
+}
+
+// Progress bars ===============================================================
+
+// Containers ==================================================================
+
+.list-group-item {
+  h1, h2, h3, h4, h5, h6 {
+    color: inherit;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body::after {
+	content: "";
+	background: url("https://www.na.org/admin/include/spaw2/uploads/rtf/FTP/NA_Logos_Please_Read_FIPT_Bulletins_1_and_3_before_downloading_files/NA%20Svc-sym%20logo%20-%20NAWS%20-%202008.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	
+	background-position: bottom right;
+	top: 0;
+	left: 75%;
+	bottom: 20px;
+	right: 50px;
+	/*
+	background-position: bottom;
+	top: 80px;
+	left: 20px;
+	bottom: 20px;
+	right: 20px;
+	*/
+	opacity: 0.1;
+	position: fixed;
+	z-index: -1;  
+}
